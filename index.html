@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VIRTUAL BATTLE — Главная</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">VIRTUAL BATTLE</div>
+    <nav class="nav">
+      <a href="#blog">Блог</a>
+      <a href="#gallery">Галерея</a>
+      <a href="#contact">Контакты</a>
+      <a href="#register" class="button">Регистрация</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Добро пожаловать на сервер VIRTUAL BATTLE</h1>
+    <p></p>
+  </section>
+
+  <section id="blog" class="blog">
+    <h2>Последние новости</h2>
+    <div class="blog-posts">
+      <article><h3>Наш ютуб канал :</h3><p>Присоединяся</p></article>
+      <article><h3>Наш дискорд канал :</h3>
+        <p>
+          <a href="https://discord.com/invite/hqcvgmZ" target="_blank">Присоединяся</a>
+        </p>
+      </article>
+      <article><h3></h3><p></p></article>
+    </div>
+  </section>
+
+  <section id="gallery" class="gallery">
+    <h2>Галерея</h2>
+    <div class="images">
+      <img src="beeple-by-beeple-mike-winkelmann-by-mike-winkelmann-art-fa-9.jpg" alt="CS Screenshot" onclick="showImage(this)">
+      <img src="opticheskaia-illiuziia-neon-svet-abstraktsiia-kompiuternyi-a.jpg" alt="Map View" onclick="showImage(this)">
+      <img src="solntse-muzyka-neon-stil-fon-style-neon-illustration-synth-r.jpg" alt="Players" onclick="showImage(this)">
+    </div>
+  </section>
+
+  <section id="contact" class="contact-form">
+    <h2>Обратная связь</h2>
+    <form id="contactForm">
+      <input type="text" placeholder="Ваше имя" required>
+      <input type="email" placeholder="Ваш email" required>
+      <textarea placeholder="Сообщение" required></textarea>
+      <button type="submit">Отправить</button>
+    </form>
+    <p id="formMessage" style="display:none; color: #00ff99; margin-top: 1rem;">Спасибо! Ваше сообщение отправлено.</p>
+  </section>
+
+  <section id="register" class="register">
+    <h2>Регистрация</h2>
+    <form onsubmit="return handleRegister(event)">
+      <input type="text" placeholder="Логин" required>
+      <input type="password" placeholder="Пароль" required>
+      <button type="submit">Создать аккаунт</button>
+    </form>
+    <p id="registerMsg" style="display:none; color: #00ff99; margin-top: 1rem;">Аккаунт успешно создан!</p>
+  </section>
+
+  <footer class="site-footer">
+    <p>© 2025 CS 1.6 Fan Site</p>
+  </footer>
+</body>
+</html>
